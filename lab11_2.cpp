@@ -59,7 +59,7 @@ int main(){
 	do{
 		cout << "(1) Destiny draw (2) Stay, SELECT: ";
 		cin >> playerAction;
-	}while(playerAction != 1 || playerAction != 2); //This line of code is not completed. You need to set the condition to do loop if user's input is not 1 or 2. 
+	}while(playerAction != 1 && playerAction != 2); //This line of code is not completed. You need to set the condition to do loop if user's input is not 1 or 2. 
 	if(playerAction == 1){
 		playerCards[2] = drawCard();
   		playerScore = calScore(playerCards[0],playerCards[1],playerCards[2]);
